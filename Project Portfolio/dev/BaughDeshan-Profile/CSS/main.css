@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+/* === Variable Declarartions ===*/
+:root {
+  --color-primary: #1b263b;
+  --color-secondary: #afd0fe;
+  --color-accent: #778da9;
+  --color-light: #e2e6f3;
+  --color-dark: #0d1b2a;
+}
+
+/* Entire Page font & background */
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  background-color: var(--color-light);
+}
+/* === link hover color === */
+a:hover {
+  color: rgb(94, 126, 233);
+}
+/* == Page headings & footer == */
+header{
+  width: 100%;
+}
+h1 {
+  width: 25%;
+  border-radius: 1rem;
+  /* margin: 0 auto;  */
+}
+h2,
+h3,
+footer {
+  background-color: var(--color-secondary);
+  border: 2px solid;
+  border-radius: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  width: 100%;
+}
+img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+/* === Pseudo Element ===*/
+p::first-letter {
+  color: dodgerblue;
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* === Pseudo Class === */
+.button:hover {
+  background-color: #1b263b;
+  color: white;
+}
+/* Navigation Links */
+.nav-container {
+  display: flex;
+  width:100%;
+}
+.nav-item {
+  text-align: center;
+  font-weight: bold;
+  border: 2px solid; 
+  padding: 2rem;
+  background-color: var(--color-secondary);
+  height: 85%;
+  margin-top: 2rem;
+}
+/* End of Navigation Links */
+
+/* About me */
+.about {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 30% 1fr;
+  padding: 2rem;
+  width: 100%;
+}
+.about p {
+  align-content: center;
+}
+/* Styling contact button */
+.wrapper {
+  background-color: var(--color-secondary);
+  border: 2px solid;
+  border-radius: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0rem auto;
+  width: 90%;
+  padding: 1.25rem;
+  font-size: large;
+}
+/* Hobbies & Interest */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;  
+}
+
+/* Profile links */
+.links {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+@media(min-width:768px){
+  h1{
+    margin-right: 50%;
+    margin-left: 5%;
+  }
+}
+
+@media(max-width:685px){
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0rem;  
+  }
+  h2,h3,footer{
+    background-color: #1b263b;
+    color: white;
+  }
+}
+

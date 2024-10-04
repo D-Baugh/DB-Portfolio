@@ -1,0 +1,247 @@
+<!-- 
+ Deshan Baugh
+ Project & Portfolio 1: Web Development
+ Milestone 1
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Begin of google fonts linking -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet" />
+    <!-- End of google fonts linking -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>ReadySetTravel</title>
+  </head>
+  <body>
+    <!-- Navigation links -->
+    <header>
+      <nav class="navContainer">
+        <h1 id="indexH1">ReadySet<strong class="strong">Travel</strong></h1>
+        <ul class="navContainer">
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="destinations.html">Destinations</a></li>
+          <li class="nav-item"><a href="tours.html">Tours</a></li>
+          <li class="nav-item"><a href="blog.html">Blog</a></li>
+          <li class="nav-item">Book a Trip</li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main image under header -->
+    <section class="lifeTime">
+      <img
+        id="mainImg"
+        src="img/hero-bg.jpg"
+        alt="This image depicts a stunning mountain landscape at sunset or sunrise. The sky is filled with warm hues of yellow, orange, and pink, gradually transitioning into purples as it meets the distant horizon. The scene showcases layers of mist-covered mountain ridges, creating a sense of depth and serenity. In the foreground, a lone hiker stands on a rocky outcrop, silhouetted against the vibrant sky, emphasizing the scale of the surrounding mountains. The hiker appears small in comparison to the vastness of the natural world, contributing to the sense of adventure and solitude in the wilderness." />
+      <section class="textBlock">
+        <h2 id="headImgHeader" class="abril">Book the trip of a lifetime</h2>
+        <p id="headImgP" class="robotoBold">
+          Get the best advice and tips for your dream trip
+        </p>
+      </section>
+    </section>
+    <main>
+      <!-- Form for user destination  -->
+      <section class="toGo">
+        <p class="abril3">Where do you want to go?</p>
+        <form>
+          <input
+            type="text"
+            id="enterWhere"
+            placeholder="Enter a destination" /><label
+            class="book"
+            for="enterWhere"
+            >Search</label
+          >
+        </form>
+      </section>
+      <!-- Trending Tours -->
+      <section id="toursMain">
+        <h3 id="toursH" class="abril2">Trending Tours</h3>
+        <p id="toursHP" class="robotoLightHeader">
+          Get out there and experience some adventure!
+        </p>
+        <!-- Cards with current trending tours, prices, and button links -->
+        <!-- First card -->
+        <section class="tourCards">
+          <section class="tours">
+            <img
+              class="toursIMG"
+              src="img/tour-mountainHiking.jpg"
+              alt="This image showcases a picturesque hiking scene, with a single hiker carrying a large red backpack, walking along a rugged mountain path. The trail winds up along the ridgeline of a lush, green mountain, leading toward a peak in the distance, where a cross stands at the summit. The hiker appears to be making their way upward, following the stone path surrounded by steep grassy slopes. In the background, there are breathtaking views of a valley, distant mountains, and a serene blue lake, all beneath a clear blue sky. The image evokes a sense of adventure and tranquility in nature." />
+            <div class="cardMarg">
+              <p class="robotoBold">Alps Mountain Hiking Tour</p>
+              <p class="robotoLight">4 days | 10 stops</p>
+              <div class="cardFlex">
+                <p class="price">$1,500</p>
+                <p class="book">Book now</p>
+              </div>
+            </div>
+          </section>
+          <!-- Second Card -->
+          <!-- temporary height & widths -->
+          <section class="tours">
+            <img
+              src="img/tour-snorkel.jpg"
+              alt="The image shows an underwater scene where a person is snorkeling or free diving in clear, blue water. The diver is wearing fins and a mask, swimming towards the ocean floor, which is covered in coral or rocky formations. The water appears calm, with light rays filtering through from the surface above, giving a sense of depth and tranquility. The diver is tethered to a line, possibly for safety or to remain within a certain range. The overall mood of the image is serene and immersive, showcasing the beauty of underwater exploration."
+              class="toursIMG" />
+            <div class="cardMarg">
+              <p class="robotoBold">Snorkel the Barrier Reef Tour</p>
+              <p class="robotoLight">2 days | 2 stops</p>
+            </div>
+            <div class="cardFlex">
+              <p class="price">$1,000</p>
+              <p class="book">Book now</p>
+            </div>
+          </section>
+          <!-- Third Card -->
+          <section class="tours">
+            <img
+              src="img/tour-pyramids.jpg"
+              alt="The image captures a desert scene at sunset, featuring a caravan of people riding camels in front of the iconic pyramids of Egypt. The silhouettes of the camels and riders are illuminated by the warm, golden glow of the setting sun, casting long shadows on the sandy ground. In the background, two large pyramids dominate the horizon, while the distant landscape fades into the desert's soft hues. The scene evokes a sense of adventure and historical significance, blending the majestic presence of the pyramids with the timeless tradition of camel riding in the desert."
+              class="toursIMG" />
+            <div class="cardMarg">
+              <p class="robotoBold">Tour the Pyramids on Camelback</p>
+              <p class="robotoLight">2 days | 2 stops</p>
+            </div>
+            <div class="cardFlex">
+              <p class="price">$2,000</p>
+              <p class="book">Book now</p>
+            </div>
+          </section>
+        </section>
+      </section>
+      <!-- Perfect Trip header and Trip Plan image links -->
+      <h3 class="perfectTrip">Plan the <span>Perfect Trip</span></h3>
+      <p class="robotoLightHeader">
+        We take care of it all so you can get out there and experience some
+        adventure!
+      </p>
+      <section class="perfectPlan">
+        <img src="img/icon-flights.png" alt="" />
+        <img src="img/icon-transport.png" alt="" />
+        <img src="img/icon-guide.png" alt="" />
+        <p class="robotoBold">Flight</p>
+        <p class="robotoBold">Transportation</p>
+        <p class="robotoBold">Guides</p>
+      </section>
+      <!-- Top destinations image grid -->
+      <h3 class="abril2">Top Notch Destinations</h3>
+      <p class="robotoLightHeader">
+        These places are on everyone's bucket list
+      </p>
+      <!-- class for each individual section of the grid -->
+      <section class="imgGridContainer">
+        <article id="machuGrid">
+          <a>
+            <img
+              src="img/destinations-machu.jpg"
+              alt="This image shows the ancient Inca city of Machu Picchu, nestled high in the Andes Mountains of Peru. The view captures the iconic stone terraces and structures of the site, with the towering mountain peak of Huayna Picchu rising dramatically in the background. The city appears to be partially shrouded in mist, adding to its mystical and majestic atmosphere. The green terraces and stone walls are illuminated by soft light, enhancing the contrast between the natural landscape and the human-made ruins. Machu Picchu, a UNESCO World Heritage Site, is renowned for its historical and cultural significance."
+              class="imgGridItem"
+              id="machu" />
+          </a>
+          <div class="imgGridText">
+            <p class="robotoMediumGrid">Machu Pichu</p>
+            <p class="robotoLightGrid">Peru</p>
+          </div>
+        </article>
+        <article id="romeGrid">
+          <a>
+            <img
+              src="img/destinations-rome.jpg"
+              alt="The image shows a detailed view of classical statues on an intricately carved stone structure, likely part of a monumental building. In the background, you can see a cityscape with historical architecture, including a large domed building, characteristic of European cities like Rome. The scene is serene with a soft light, possibly at dawn or dusk, and there are trees and rooftops adding to the atmosphere of an ancient city. The statues appear to be figures from classical mythology or history, giving the image a grand and timeless feel."
+              id="rome"
+              class="imgGridItem" />
+          </a>
+          <div class="imgGridText">
+            <p class="robotoMediumGrid">Rome</p>
+            <p class="robotoLightGrid">Italy</p>
+          </div>
+        </article>
+        <article id="sydGrid">
+          <a>
+            <img
+              class="imgGridItem"
+              id="sydney"
+              src="img/destinations-sydney.jpg"
+              alt="This image captures two iconic landmarks of Sydney, Australia, set against a bright, clear sky and the waters of Sydney Harbour. In the foreground is the Sydney Opera House, with its distinctive white sail-like design. Its modern, sculptural architecture contrasts with the industrial, steel structure of the Sydney Harbour Bridge, which is visible behind the Opera House, spanning the harbor. The bridge's massive arch rises prominently, connecting the urban areas on either side of the harbor. The image exudes a sense of openness and modernity, with Sydney's skyline visible in the background." />
+          </a>
+          <div class="imgGridText">
+            <p class="robotoMediumGrid">Sydney</p>
+            <p class="robotoLightGrid">Austrlia</p>
+          </div>
+        </article>
+        <article id="parisGrid">
+          <a>
+            <img
+              class="imgGridItem"
+              id="paris"
+              src="img/destinations-paris.jpg"
+              alt="This image showcases a panoramic view of Paris, France. The iconic Eiffel Tower stands prominently in the distance, dominating the skyline. The scene also features Parisian architecture, with its classic stone buildings, narrow streets, and rooftops, creating a sense of historical charm. The Seine River can be seen in the foreground, with a bridge crossing over it, leading to a busy street. The layout of the city is dense, with a mixture of modern and old structures, offering a vibrant urban atmosphere. The sky is clear, adding to the brightness and beauty of the scene." />
+          </a>
+          <div class="imgGridText">
+            <p class="robotoMediumGrid">Paris</p>
+            <p class="robotoLightGrid">France</p>
+          </div>
+        </article>
+        <article id="rioGrid">
+          <a>
+            <img
+              class="imgGridItem"
+              id="rio"
+              src="img/destinations-rio.jpg"
+              alt="This image offers a breathtaking aerial view of Rio de Janeiro, Brazil, with the iconic Christ the Redeemer statue prominently perched atop Corcovado Mountain. The expansive city stretches out below, with its urban landscape nestled between lush mountains and the coastline. In the background, the waters of the Atlantic Ocean glisten under the sunlight, meeting the horizon. The distinctive shape of Sugarloaf Mountain is visible in the distance, further enhancing the beauty of the scene. The city's combination of nature, water, and urban areas, alongside the towering Christ the Redeemer, creates a captivating and dynamic vista." />
+          </a>
+          <div class="imgGridText">
+            <p class="robotoMediumGrid">Rio De Janeiro</p>
+            <p class="robotoLightGrid">Brazil</p>
+          </div>
+        </article>
+      </section>
+      <!-- Footer -->
+      <footer class="footer">
+        <section class="footerSection">
+          <h2>ReadySet<strong>Travel</strong></h2>
+          <p id="footerp">We can provide you with the best</p>
+          <p id="footerp2">advice and tips for your dream trip.</p>
+          <section class="socialFooterSection">
+            <img src="img/social-facebook.png" alt="" />
+            <img src="img/social-instagram.png" alt="" />
+            <img src="img/social-twitter.png" alt="" />
+          </section>
+        </section>
+        <!-- Start of Footer -->
+        <section class="footerSection">
+          <h4>Contact Us</h4>
+          <p>
+            1234 Address Street <br />
+            Winter Park,FL 32792
+          </p>
+          <p>123-456-7890</p>
+        </section>
+        <section class="footerSection2">
+          <h4>Links</h4>
+          <ul>
+            <li>About</li>
+            <li>Destinations</li>
+            <li>Discover</li>
+            <li>Blog</li>
+          </ul>
+        </section>
+      </footer>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+<!-- 
+I used ChatGpt to generate the alternative text description for nine images. Here are my citations, each link holds 3 images and their corresponding descriptions
+Sources Cited:
+OpenAI. (2024). ChatGPT [Large language model]. https://chatgpt.com/c/66e789e2-4a5c-8007-b2f5-fcdf0ac31887
+OpenAI. (2024). ChatGPT [Large language model]. https://chatgpt.com/c/66e78dfe-871c-8013-a0ed-46fb8f2c1285 
+OpenAI. (2024). ChatGPT [Large language model]. https://chatgpt.com/c/66e78f16-865c-8013-a3dc-805a67841cf5
+-->
