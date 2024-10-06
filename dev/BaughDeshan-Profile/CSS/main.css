@@ -3,11 +3,15 @@
 }
 /* === Variable Declarartions ===*/
 :root {
-  --color-primary: #1b263b;
-  --color-secondary: #afd0fe;
-  --color-accent: #778da9;
-  --color-light: #e2e6f3;
-  --color-dark: #0d1b2a;
+  --color-primary: #587c93;
+  --color-primary2: #ee8a5a;
+  --color-secondary: #a8c7dc;
+  --color-secondary2: #0b0c25;
+  --color-secondary3: #e7ecf3;
+  --color-text: #0D1B2A;
+  --color-text2: #1B263B;
+  --color-background: #E2E6F3;
+  --color-background2: #d9dee3;
 }
 /*  Font Styles from Google Fonts */
 /* https://fonts.google.com/selection/embed */
@@ -71,25 +75,62 @@
   font-style: italic;
 }
 /* End of font styles */
+body{
+  background-color: #E8F1FF;
+}
 /* Header Styles */
 header {
-  display: grid;
-  grid-template-columns: 20% 1fr;
+  display: flex;
   padding-left: 5%;
   padding-right: 5%;
+  color: var(--color-text2);
+  background-color: #F9FCFF;
 }
 header h1 {
   margin-bottom: 0;
 }
 header p {
-  grid-area: 2/1/2/1;
   margin-top: 0;
 }
-nav ul {
-  display: flex;
+#nav-links{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr ;
   list-style: none;
   justify-content: space-between;
 }
+.nav-img{
+  width: 100%;
+}
+#nav-header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 nav ul li {
   margin-top: 2%;
+}
+/* About Me Section Styles */
+#about-me{
+  display: grid;
+  grid-template-columns: 20% 1fr;
+  grid-template-rows: 15% 15%;
+  text-align: center;
+  gap: 0;
+}
+#self-portrait {
+  width: 100%;
+  margin-top: 10px;
+  margin-left: 5%;
+  border-radius: 100%;
+  box-shadow: 1px 1px 5px var(--color-text2);
+}
+#about-me-h2{
+  margin-bottom: 0;
+}
+#about-me-P{
+  margin-top: 0;
+  grid-area: 2/2/2/2;
+  margin-left: 5%;
+  margin-right: 5%;
 }
