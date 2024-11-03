@@ -1,16 +1,16 @@
 * {
   box-sizing: border-box;
 }
-/* === Variable Declarartions ===*/
+/* === Color Palette  ===*/
 :root {
   --color-primary: #587c93;
   --color-primary2: #ee8a5a;
   --color-secondary: #a8c7dc;
   --color-secondary2: #0b0c25;
   --color-secondary3: #e7ecf3;
-  --color-text: #0D1B2A;
-  --color-text2: #1B263B;
-  --color-background: #E2E6F3;
+  --color-text: #0d1b2a;
+  --color-text2: #1b263b;
+  --color-background: #e2e6f3;
   --color-background2: #d9dee3;
 }
 /*  Font Styles from Google Fonts */
@@ -75,16 +75,19 @@
   font-style: italic;
 }
 /* End of font styles */
-body{
-  background-color: #E8F1FF;
+body {
+  background-color: #d1e4ff;
+}
+/* remove bullet points from list */
+ul {
+  list-style: none;
 }
 /* Header Styles */
 header {
   display: flex;
-  padding-left: 5%;
-  padding-right: 5%;
   color: var(--color-text2);
-  background-color: #F9FCFF;
+  background-color: #e8f1ff;
+  border: 1px solid;
 }
 header h1 {
   margin-bottom: 0;
@@ -92,32 +95,38 @@ header h1 {
 header p {
   margin-top: 0;
 }
-#nav-links{
+#nav-links {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr ;
+  grid-template-rows: 20% 20%;
   list-style: none;
   justify-content: space-between;
+  justify-items: center;
 }
-.nav-img{
-  width: 100%;
+.nav-img {
+  width: 20%;
 }
-#nav-header{
+#nav-header {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 40%;
+  text-align: center;
 }
 nav ul li {
   margin-top: 2%;
 }
 /* About Me Section Styles */
-#about-me{
+#about-me {
   display: grid;
   grid-template-columns: 20% 1fr;
-  grid-template-rows: 15% 15%;
+  grid-template-rows: 15% 25% 15% 15%;
   text-align: center;
   gap: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 500px;
 }
+
 #self-portrait {
   width: 100%;
   margin-top: 10px;
@@ -125,12 +134,46 @@ nav ul li {
   border-radius: 100%;
   box-shadow: 1px 1px 5px var(--color-text2);
 }
-#about-me-h2{
+#about-me-h2 {
   margin-bottom: 0;
 }
-#about-me-P{
+#about-me-P {
   margin-top: 0;
   grid-area: 2/2/2/2;
   margin-left: 5%;
   margin-right: 5%;
+}
+#Achievements{
+  grid-area:3/2/3/2 ;
+  padding-bottom: 0;
+}
+/* Hobbies and Interest styles */
+#Hobbies-Interests{
+  padding-top: 0;
+  margin-top: 0;
+}
+#Hobbies-Interests h2{
+ text-align: center;
+}
+#HI-list{
+  display: grid;
+  grid-template:20% 20% 20%/ 1fr 1fr 1fr;
+  margin-right: 10%;
+  margin-left: 10%;
+  gap: 8rem;
+  text-align: center;
+
+}
+
+img{
+  width: 80%;
+}
+
+/* work in progress */
+#scriptFunnies{
+  text-align: center;
+}
+
+#scriptP{
+  padding-bottom: 2%;
 }
