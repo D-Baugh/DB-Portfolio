@@ -1,5 +1,5 @@
 (() => {
-     //  Build DOM
+     // Script Section DOM 
   // create elements
   scriptSection = document.createElement("section");
   scriptSectionHeader = document.createElement("h2");
@@ -19,11 +19,11 @@
   funnyButton.innerHTML = "Click for a new funny!"
   // append to body
   document.body.append(scriptSection)
-  document.body.append(scriptSectionHeader);
-  document.body.append(scriptP)
-  document.body.append(setup)
-  document.body.append(delivery)
-  document.body.append(funnyButton)
+  scriptSection.appendChild(scriptSectionHeader);
+  scriptSection.appendChild(scriptP)
+  scriptSection.appendChild(setup)
+  scriptSection.appendChild(delivery)
+  scriptSection.appendChild(funnyButton)
 
   // store api within variable URL
   const url = `https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart`;

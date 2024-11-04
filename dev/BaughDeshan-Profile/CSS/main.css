@@ -77,6 +77,7 @@
 /* End of font styles */
 body {
   background-color: #d1e4ff;
+  font-family: "Lato", sans-serif;
 }
 /* remove bullet points from list */
 ul {
@@ -115,6 +116,9 @@ header p {
 nav ul li {
   margin-top: 2%;
 }
+#nav-laugh {
+  font-size: xx-large;
+}
 /* About Me Section Styles */
 #about-me {
   display: grid;
@@ -143,37 +147,68 @@ nav ul li {
   margin-left: 5%;
   margin-right: 5%;
 }
-#Achievements{
-  grid-area:3/2/3/2 ;
+#Achievements {
+  grid-area: 3/2/3/2;
   padding-bottom: 0;
 }
 /* Hobbies and Interest styles */
-#Hobbies-Interests{
+#Hobbies-Interests {
   padding-top: 0;
   margin-top: 0;
+  font-weight: bold;
+  max-height: 1000px;
 }
-#Hobbies-Interests h2{
- text-align: center;
+#Hobbies-Interests h2 {
+  text-align: center;
 }
-#HI-list{
+#HI-list {
   display: grid;
-  grid-template:20% 20% 20%/ 1fr 1fr 1fr;
+  grid-template: 20% 20% 20%/ 1fr 1fr 1fr;
   margin-right: 10%;
   margin-left: 10%;
   gap: 8rem;
   text-align: center;
-
 }
 
-img{
+#Hobbies-Interests img {
   width: 80%;
 }
 
-/* work in progress */
-#scriptFunnies{
+/* Games & Funnies styles */
+#scriptFunnies {
   text-align: center;
 }
 
-#scriptP{
+#scriptP {
   padding-bottom: 2%;
+}
+button{
+  background-color: yellow;
+  font-weight: bold;
+  border: 5px;
+  border-style: double;
+
+}
+/*  footer styles */
+footer {
+  max-height: 500px;
+  text-align: center;
+  padding-top: 5%;
+}
+#footer-links {
+  display: flex;
+  font-weight: bold;
+  font-size:xx-large;
+}
+#linked-img {
+  width: 50%;
+}
+#git-img {
+  width: 30%;
+}
+#footerS1 {
+  width: 50%;
+}
+#footerS2 {
+  width: 50%;
 }
