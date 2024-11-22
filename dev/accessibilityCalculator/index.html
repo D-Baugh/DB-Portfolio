@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=Poppins:ital,wght@0,500;1,400&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Accessibility</title>
+  </head>
+  <body>
+    <main>
+      <section
+        id="display"
+        aria-label="Output Display"
+        role="region"
+        tabindex="0">
+        <button aria-label="toggle Mute" tabindex="-1">Mute</button>
+        <p tabindex="-1">
+          <span tabindex="-1" aria-hidden="true">000000000</span
+          ><span tabindex="-1" aria-hidden="true">72393124087</span
+          ><span>0</span>&nbsp;
+        </p>
+        <ul tabindex="-1">
+          <li tabindex="-1" aria-hidden="true">&nbsp;</li>
+          <li tabindex="-1" aria-hidden="true">&nbsp;</li>
+          <li tabindex="-1" aria-hidden="true">&nbsp;</li>
+        </ul>
+      </section>
+      <section
+        id="numerals"
+        tabindex="0"
+        role="region"
+        aria-label="number inputs">
+        <button tabindex="-1">1</button>
+        <button tabindex="-1">2</button>
+        <button tabindex="-1">3</button>
+        <button tabindex="-1">4</button>
+        <button tabindex="-1">5</button>
+        <button tabindex="-1">6</button>
+        <button tabindex="-1">7</button>
+        <button tabindex="-1">8</button>
+        <button tabindex="-1">9</button>
+        <button tabindex="-1">0</button>
+        <button tabindex="-1">.</button>
+      </section>
+      <section
+        id="operators"
+        tabindex="0"
+        role="region"
+        aria-label="operator inputs">
+        <button tabindex="-1">+</button>
+        <button tabindex="-1">-</button>
+        <button tabindex="-1">/</button>
+        <button tabindex="-1">*</button>
+        <button tabindex="-1">=</button>
+      </section>
+      <section
+        id="modifiers"
+        tabindex="0"
+        role="region"
+        aria-label="modifier inputs">
+        <button tabindex="-1">C</button>
+        <button tabindex="-1">-/+</button>
+        <button tabindex="-1"><</button>
+      </section>
+    </main>
+
+    <audio
+      id="audioOne"
+      src="assets/audio/Glitch07.mp3"
+      type="audio/mpeg"></audio>
+    <audio
+      id="audioTwo"
+      src="assets/audio/Glitch10.mp3"
+      type="audio/mpeg"></audio>
+    <audio
+      id="audioThree"
+      src="assets/audio/Swishes1.mp3"
+      type="audio/mpeg"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

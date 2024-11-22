@@ -1,0 +1,203 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E0EAFC;  /* fallback for old browsers */
+    background: linear-gradient(to right, #6e716d, #6e7472); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    width: 60ch;
+    margin: 0 auto;
+    /* background: rgb(77, 64, 64); */
+    background: #161515;
+    border-radius: 3ch;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto;
+    padding: 2ch;
+    overflow: hidden;
+    box-shadow:  0px 0px 300px #0b0909;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: rgb(7, 8, 8);
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    border-radius: 2ch;
+    margin-bottom: 2ch;
+    box-shadow: -2px 2px 60px 0px rgba(68, 222, 21,.05) inset;
+
+    color: rgb(68, 222, 21);
+    font-family: 'Courier Prime', sans-serif;
+}
+
+#display p {
+    pointer-events: none;
+}
+
+#display span:not(:last-of-type) {
+    color: rgba(68, 222, 21,.04);
+    text-shadow: 0 0 15px rgb(68, 222, 21,.1);
+    pointer-events:none;
+}
+
+#display p span:last-of-type {
+    pointer-events:all;
+}
+
+#numerals {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    z-index: 5;
+}
+
+#operators {
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: span 3;
+    z-index: 6;
+}
+
+#modifiers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+}
+
+button {
+    /* display: inline-block; */
+    /* text-align: center;
+    margin: 0 auto; */
+    padding: 3ch;
+    margin: 2px;
+    outline: none;
+    border:none;
+    
+    border-radius: 5px;
+    background: linear-gradient(145deg, #1c1b1b, #1c1919);
+    box-shadow:  10px 10px 30px #0b0909,
+    -1px -1px 3px #2d2a2a;
+
+    color:rgb(68, 222, 21);
+    text-shadow: 0 0 3px rgb(68, 222, 21), 0 0 60px rgb(0, 0, 0);
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background: linear-gradient(145deg, rgb(68, 222, 21), rgb(48, 186, 6));
+    text-shadow: 0 0 3px rgb(68, 222, 21), 0 0 10px rgb(68, 222, 21);
+    color:rgb(24, 51, 16);
+}
+
+button:active {
+    cursor: pointer;
+    text-shadow: none;
+
+}
+
+#numerals button:nth-child(3n + 1){
+    margin-left: 0;
+}
+
+#numerals button:nth-child(10){
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+#modifiers button:first-of-type {
+    margin-left: 0;
+}
+
+#operators button {
+    margin-right: 0;
+}
+
+#display button {
+    background: rgba(68, 222, 21,.24);
+    box-shadow: none;
+    margin: 20px auto 0 20px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    text-align: center;
+    padding: 10px;
+    color: rgb(68, 222, 21);
+}
+
+#display button img {
+    width: 65%;
+    height: auto;
+}
+
+#display button.mute {
+    background: rgb(255, 214, 30);
+}
+
+*:focus,
+#display:focus,
+#display button:focus {
+    outline: none;  
+    box-shadow: 0 0 42px rgb(255, 214, 30)  ; 
+	-webkit-box-shadow: 0 0 42px rgb(255, 214, 30)  ; 
+	-moz-box-shadow: 0 0 42px rgb(255, 214, 30)  ; 
+}
+
+#display p,
+#display ul {
+    margin: 0 20px 0 auto;
+    display: block;
+    text-shadow: 0 0 15px rgb(68, 222, 21);
+}
+
+#display p {
+    font-size: 5rem;
+    order: 3;
+    position: relative;
+}
+
+#display p span {
+    position: absolute;
+    right: 0;
+}
+
+#display ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 3rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+}
+
+#display ul li {
+    margin-bottom: 4px;
+    padding: 2px 8px 2px 3rem;
+    background: rgba(68, 222, 21,.1);
+    font-size: 1.25rem;
+
+    margin-left: auto;
+}
+
+#display ul li[aria-hidden="true"]{
+    background: transparent;
+}
